@@ -154,21 +154,30 @@ button{
     width:100%;
     padding:16px;
     border:none;
-    outline:none;
+    border-radius:14px;
     background:#7A9F2B;
     color:#fff;
     font-size:18px;
     font-weight:600;
-    border-radius:14px;
     cursor:pointer;
+
     box-shadow:0 6px 0 #56741B;
 
-    transition: all .35s ease;
+    transition:transform .2s ease,
+               box-shadow .2s ease,
+               background .3s ease;
 }
 
+/* Hover */
 button:hover{
-    transform: translateY(-6px) translateX(3px);
-    box-shadow:0 14px 24px rgba(122,159,43,.35);
+    transform:translateY(-4px);
+    box-shadow:0 12px 20px rgba(122,159,43,.35);
+}
+
+/* Click Effect */
+button:active{
+    transform:translateY(4px);
+    box-shadow:0 2px 0 #56741B;
 }
 @media(max-width:768px){
 
